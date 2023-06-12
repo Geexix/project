@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: azure;
+    font-size: 1rem;
+}
+/*navbar vertical*/
+#logo{
+    font-size: 2.1rem;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+
+}
+nav{
+    background-color: rgba(65, 61, 61, 0.7);
+    height: 100vh;
+    width: 4rem;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+nav ul{
+    margin-top:1rem;
+
+}
+nav ul li{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: rgb(174, 168, 168, 1);
+}
+nav ul li a{
+    color: rgb(174, 168, 168, 1);
+    transition: translate(0.5s);
+}
+nav ul li a:hover{
+    color: rgb(77, 112, 236);
+    transform: translateX(2px);
+}
+.cog{
+    flex-basis: 10%;
+    flex: 1;
+    margin-top: 45vh;
+}
+.user{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.content{
+    padding: 2px 1rem 0 5rem;
+}
+/*navbar horizontal*/
+.nav1{
+    margin: 2px;
+    display: flex;
+}
+.nav1 div{
+    flex:1;
+}
+.top1 a{
+    padding-right: 2rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.top1 a:hover{
+    color: rgb(116, 5, 5);
+}
+.top2{
+    text-align: right;
+}
+.top2 ul{
+    display: inline-block;
+    padding-right: 5px;
+}
+.top2 ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+/*horizontal navbar buttom*/
+.nav2{
+ display: flex;
+ margin-top: 2rem;
+}
+.nav2 div{
+    flex:1;
+}
+.left{
+    display: flex;
+    margin: 0 0 1rem;
+}
+.left p{
+    font-size: 2rem;
+}
+.left button{
+    border:1px solid green;
+    background-color: rgb(104, 186, 104);
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 1.8rem;
+    width: 8rem;
+    margin-left: 4rem;
+    color: white;
+    cursor: pointer;
+}
+.right{
+    text-align: right;
+}
+.right ul{
+    display: inline-block;
+    padding-right: 5px;
+}
+.right ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+select{
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*project in content*/
+.project{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.project div{
+    flex-basis: 25%;
+    height: 31vh;
+    min-width: 22rem;
+    border: 1px solid rgb(249, 247, 247);
+    margin: 1rem 2rem 1rem 0;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px rgb(239, 234, 234);
+    cursor: pointer;
+    transition: translate(0.5s);
+}
+.project div:hover{
+    transform: translateY(2px);
+}
+.project div hr{
+    opacity: 0.4;
+   position: relative;
+   margin-top: 1rem;
+   color: gray;
+}
+.project div img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 1.5rem 0 0 1.5rem;
+    position: absolute;
+    z-index: 1;
+}
+.duration{
+    text-align: right;
+    padding: 1.5rem 1.5rem 0 0;
+    color: rgb(70, 70, 67);
+    font-size: 1rem;
+}
+.project div .title{
+    padding: 3rem 0 0 1.5rem;
+    color: rgb(70, 70, 67);
+    font-size: 1rem;
+}
+.project div h2{
+    padding: 0.5rem 0 0 1.5rem;
+
+}
+
+.project div .dd{
+    padding: 0.5rem 1rem 2rem 1.5rem;
+}
+
+
+/* media query*/
+@media only screen and (max-width:1000px) {
+    .body{
+        padding-bottom: 5rem;
+    }
+    .project{
+        width: 90%;
+        position: relative;
+        display:flex;
+        max-width: 20rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    nav{
+        position: fixed;
+        height: 100vh;
+        padding: 1rem 0 1rem 0;
+    }
+    .nav1, .nav2{
+        display: flex;
+        flex-direction: row;
+    }
+    .left p{
+        font-size: 1rem;
+    }
+    .left button{
+        border:1px solid green;
+        background-color: rgb(104, 186, 104);
+        border-radius: 5px;
+        padding: 0 10px;
+        height: 1.8rem;
+        width: 8rem;
+        margin-left: 1rem;
+        color: white;
+        cursor: pointer;
+    }
+    .nav1{
+        margin: 1px;
+        display: flex;
+    }
+    .nav1 div{
+        flex:1;
+    }
+    .top1{
+        display: flex;
+        flex-direction: row;
+    }
+    .top1 a{
+        padding-right: 1rem;
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+       
+    }
+    .top1 a:hover{
+        color: rgb(116, 5, 5);
+    }
+    .top2{
+        text-align: right;
+    }
+    .top2 ul{
+        display: inline-block;
+        padding-right: 5px;
+    }
+    .top2 ul li{
+        display: inline-block;
+        list-style: none;
+        margin-left: 0.1rem;
+        cursor: pointer;
+    }
+}
+
